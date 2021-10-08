@@ -1,0 +1,12 @@
+keytool -genkey -v -alias tomcat -keyalg RSA -sigalg SHA256withRSA -validity 365 -keystore .keystore -storepass password -keypass password -dname "CN=localhost, OU=orgUnit, O=org, L=fribourg, ST=fribourg, C=CH"
+keytool -genkey -v -alias clientKey -keyalg RSA -storetype PKCS12 -keystore clientKey.p12 -storepass password -keypass password -dname "CN=Nicolas Crausaz, OU=orgUnit, O=org, L=fribourg, ST=fribourg, C=CH"
+keytool -export -alias clientKey -keystore clientKey.p12 -storetype PKCS12 -storepass password -rfc -file clientKey.cer
+keytool -import -v -file clientKey.cer -keystore .keystore -storepass password
+
+http://repo.fpki.gov/fcpca/fcpcag2.crt
+http://ca.pivkey.com/
+
+keytool -importcert -file fcpcag2.crt -keystore .keystore -alias serverca
+keytool -importcert -file tagliotestca.crt -keystore .keystore -alias serverca
+
+DOC : https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html
