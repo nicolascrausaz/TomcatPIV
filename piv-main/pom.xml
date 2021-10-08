@@ -48,7 +48,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>piv-main</finalName>
+		<finalName>piv-main</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
