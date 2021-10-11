@@ -15,4 +15,4 @@ This authentication process can of course be done with a number of different tec
 
 ## Step by step
 
-The steps to be taken are explained in the word document.
+The steps to be taken are explained in the pdf document under documentation.
