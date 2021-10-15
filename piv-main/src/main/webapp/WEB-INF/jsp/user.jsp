@@ -9,7 +9,7 @@
 <body>
 	<h1>Login Successful!</h1>
 
-	<form action="/user">
+	<form action="/piv-main/user">
 		Username:
 		<c:out value="${username}" />
 		<br> <input type="submit" value="Back" />
