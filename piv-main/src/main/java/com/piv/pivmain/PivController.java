@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class PivController {
-	String authUrl = "https://www.nicocrausaz.com:8443/piv-auth/";
-	//String authUrl = "https://localhost:8443/piv-auth/";
+	//Uncomment the line below if you have a registered domain
+	//String authUrl = "https://www.nicocrausaz.com:8443/piv-auth/";
+	String authUrl = "https://localhost:8443/piv-auth/";
 
 	@GetMapping({"/","/user"})
 	public String user() {
