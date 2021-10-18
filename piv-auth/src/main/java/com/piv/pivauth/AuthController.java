@@ -16,8 +16,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Controller
 public class AuthController {
-	String projectUrl = "https://nicocrausaz.com:8443/piv-main/userpage/%s";
-	// String projectUrl = "https://localhost:8443/piv-main/userpage/%s";
+	String projectUrl = "https://www.nicocrausaz.com:8443/piv-main/userpage/%s";
+	//String projectUrl = "https://localhost:8443/piv-main/userpage/%s";
 
 	@GetMapping(value = "/")
 	public void auth(HttpServletResponse response) throws InvalidNameException {
